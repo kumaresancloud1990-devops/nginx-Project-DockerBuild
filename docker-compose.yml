@@ -1,0 +1,8 @@
+services:
+  nginx:
+    build: .
+    container_name: custom-nginx-task3
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-data:/var/opt/nginx
